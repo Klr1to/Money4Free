@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ДеньгиДаром</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="header">
+            <img class="logo" src="./logo.jpg" alt="logo">
+            <h4>Деньги Даром</h4>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="index.html#calc">Калькулятор</a>
+                <a href="about.html">О нас</a>
+                <a href="privacy.html">Конфиденциальность</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+        <div class="main">
+            <h3>Получайте деньги из воздуха ПРЯМО СЕЙЧАС!!!</h3>
+            <p>Просто вложите деньги — и деньги сами начнут делать деньги. Без рисков. Без обмана. Наверное.</p>
+            <ul>
+                <li>Без справок и поручителей</li>
+                <li>Прибыль каждый день</li>
+                <li>100% гарантия (честное слово)</li>
+            </ul>
+        </div>
+        <div class="calc" id="calc">
+            <h3>Калькулятор расчёта прибыли</h3>
+            <label>Сумма вложений, ₽
+                <input id="amount" type="number" value="1000" min="0">
+            </label>
+            <label>Доходность в день, %
+                <input id="rate" type="number" value="5" min="0">
+            </label>
+            <label>Срок, дней
+                <input id="days" type="number" value="30" min="0">
+            </label>
+            <button id="calcBtn">Рассчитать прибыль</button>
+            <p id="result"></p>
+        </div>
+        <div class="footer">
+            <nav class="nav">
+                <a href="about.html">О нас</a>
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <p>Деньги Даром не является финансовой пирамидой. Наверное.</p>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
